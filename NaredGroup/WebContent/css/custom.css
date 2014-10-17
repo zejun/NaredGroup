@@ -9,13 +9,3 @@
 	----**/
 	height: 60px;
 }
-
-.custom-font{
-	font-family: customfont;
-	src: url(../res/custom-font.otf);
-}
-
-.custom-font-bold{
-	font-family: customfontbold;
-	src: url(../res/custom-font-bold.otf);
-}
