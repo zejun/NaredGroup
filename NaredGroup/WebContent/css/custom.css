@@ -3,9 +3,17 @@
 	border-color: transparent;
 }
 
-.navbar-cus-height{
-	/**------
-	text-decoration: overline;
-	----**/
-	height: 60px;
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}
+
+.custom-font{
+	font-family: customfont;
+}
+
+.custom-font{
+	font-family: customfont-bold;
 }
