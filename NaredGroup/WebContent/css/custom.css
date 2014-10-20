@@ -20,6 +20,14 @@
 	font-family: customfont-bold;
 }
 
+.custom-font-size{
+	font-size: 17px;
+}
+
+.custom-li-width{
+	width: 30%;
+}
+
 .custom-nav-position{
 	width: 50%;
 }
