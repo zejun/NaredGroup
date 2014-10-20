@@ -24,8 +24,20 @@
 	font-size: 17px;
 }
 
-.custom-li-width{
-	width: 30%;
+.custom-li-element-width{
+	width: 20%;
+}
+
+.custom-li-language-width{
+	width: 40%;
+}
+
+.customfont-language-align{
+	text-align: right;
+}
+
+.custom-nav-width{
+	width: 96%;
 }
 
 .custom-nav-position{
