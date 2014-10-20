@@ -11,9 +11,11 @@
 }
 
 .custom-font{
+	font-size: 17 !import;
 	font-family: customfont;
 }
 
 .custom-font{
+	font-size: 17;
 	font-family: customfont-bold;
 }
