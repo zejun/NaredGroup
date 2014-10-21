@@ -43,3 +43,14 @@
 .custom-nav-position{
 	width: 50%;
 }
+
+.custom-logo-size{
+	height: 100px;
+	width: 333px;
+}
+
+.logo-position{
+	position: absolute;
+	left: 75px;
+    top: 100px;
+}
