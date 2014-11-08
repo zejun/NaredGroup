@@ -54,3 +54,14 @@
 	left: 75px;
     top: 100px;
 }
+
+.cus-remove-hover>li>a:hover,
+.cus-remove-hover>li>a:focus{
+	color: inherit;
+}
+
+.navbar-nav-cus > li > a:hover,
+.navbar-nav-cus > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
