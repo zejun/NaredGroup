@@ -1,3 +1,9 @@
+.navbar-cus-background{
+	background-color: transparent;
+	border-color: transparent;
+	background-image: url(../res/nav-back.png);
+}
+
 .navbar-cus-gradient{
 	background: -webkit-gradient(linear, 80% 0, 0 0, from(rgb(26, 26, 26)), to(transparent));
 	border-color: transparent;
