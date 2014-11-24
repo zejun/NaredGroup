@@ -39,7 +39,7 @@
                         <div class="row" style="width:110px;">
                             <div class="row" style="height: 3px;">
                                 <svg width="100%" version="1.1" style="height: 5px; ">
-                                    <rect x="0" y="3" width="62px" height="3" style="fill: #ABACA5;" id="about-svg"></rect>
+                                    <rect x="0" y="3" width="60px" height="3" style="fill: #ABACA5;" id="about-svg"></rect>
                                 </svg>
                             </div>
                             <div class="row">
@@ -119,23 +119,30 @@
 
     $("#about").mouseover(function(){
         $("#about-svg").css({fill:"#fff"});
+        $("#about").css({color:"#fff"});
     });
     $("#about").mouseout(function(){
         $("#about-svg").css({fill:"#ABACA5"});
+        $("#about").css({color:"#ABACA5"});
     });
+
 
     $("#project").mouseover(function(){
         $("#project-svg").css({fill:"#fff"});
+        $("#project").css({color:"#fff"});
     });
     $("#project").mouseout(function(){
         $("#project-svg").css({fill:"#ABACA5"});
+        $("#project").css({color:"#ABACA5"});
     });
 
     $("#contact").mouseover(function(){
         $("#contact-svg").css({fill:"#fff"});
+        $("#contact").css({color:"#fff"});
     });
     $("#contact").mouseout(function(){
         $("#contact-svg").css({fill:"#ABACA5"});
+        $("#contact").css({color:"#ABACA5"});
     });
 
     </script>
