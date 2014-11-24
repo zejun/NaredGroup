@@ -1,0 +1,13 @@
+@font-face{
+	font-family: cus-font;
+	src: url(../res/font/custom-font.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: cus-font-bold;
+	src: url(../res/font/custom-font-bold.otf);
+	font-weight: normal;
+	font-style: normal;
+}

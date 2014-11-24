@@ -17,13 +17,7 @@
 }
 
 .custom-font{
-	font-size: 17 !import;
-	font-family: customfont;
-}
-
-.custom-font{
-	font-size: 17;
-	font-family: customfont-bold;
+	font-family: cus-font;
 }
 
 .custom-font-size{
@@ -70,6 +64,7 @@
 
 .navbar-nav-cus > li > div >div >a{
 	color: #ABACA5;
+	font-family: cus-font;
 }
 
 .navbar-nav-cus > li > div >div >a:hover,
