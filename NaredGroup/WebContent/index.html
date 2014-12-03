@@ -93,7 +93,7 @@
 
 
 	<!-- Page Content -->
-    <div class="container">
+    <div class="container " style = "visibility: hidden;">
         <!--
         <div class="logo-position">
             <img src="res/logo.png" alt="" class="img-responsive center-block custom-logo-size" />
@@ -130,6 +130,9 @@
         $("#about-svg").css({fill:"#ABACA5"});
         $("#about").css({color:"#ABACA5"});
     });
+    $("#about").click(function(){
+        $('.full').css("background", "url(res/introPic.png)");  
+    });
 
 
     $("#project").mouseover(function(){
@@ -140,6 +143,9 @@
         $("#project-svg").css({fill:"#ABACA5"});
         $("#project").css({color:"#ABACA5"});
     });
+    $("#project").click(function(){
+        $('.full').css("background", "url(res/introPic.png)");  
+    });
 
     $("#contact").mouseover(function(){
         $("#contact-svg").css({fill:"#fff"});
@@ -148,6 +154,9 @@
     $("#contact").mouseout(function(){
         $("#contact-svg").css({fill:"#ABACA5"});
         $("#contact").css({color:"#ABACA5"});
+    });
+    $("#contact").click(function(){
+        $('.full').css("background", "url(res/introPic.png)");  
     });
 
     // $("#test").click(function(){
