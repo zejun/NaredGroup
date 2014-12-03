@@ -99,9 +99,8 @@
             <img src="res/logo.png" alt="" class="img-responsive center-block custom-logo-size" />
         </div>
     -->
-
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
+        <div class="row  cus-containt" style="padding-top: 10px;" id ="info-container">
+            <div class="col-md-12 col-sm-12" id ="info-containt">
             	
             </div>
         </div>
@@ -116,6 +115,12 @@
     <script src="js/custom.js"></script>
 
     <script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $("#info-container").height($(document).height());
+        
+    });
 
     $("#about").mouseover(function(){
         $("#about-svg").css({fill:"#fff"});
@@ -144,6 +149,11 @@
         $("#contact-svg").css({fill:"#ABACA5"});
         $("#contact").css({color:"#ABACA5"});
     });
+
+    // $("#test").click(function(){
+        
+    //     $('.full').css("background", "url(res/introPic.png)");  
+    // });
 
     </script>
 </body>

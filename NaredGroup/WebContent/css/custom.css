@@ -84,3 +84,11 @@
 .cus-language> a{
 	color:#ABACA5;
 }
+
+.cus-containt {
+	/** background: url(../res/contant.png) no-repeat center center fixed; **/
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
