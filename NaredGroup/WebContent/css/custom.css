@@ -92,3 +92,8 @@
   	-o-background-size: cover;
   	background-size: cover;
 }
+
+.cus-container {
+	position: relative;
+	top: 14px;
+}
