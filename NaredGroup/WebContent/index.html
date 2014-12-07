@@ -99,7 +99,7 @@
             <img src="res/logo.png" alt="" class="img-responsive center-block custom-logo-size" />
         </div>
     -->
-        <div class="row  cus-containt" style="padding-top: 10px;" id ="info-container">
+        <div class="row  cus-containt"  id ="info-container">
             <div class="col-md-12 col-sm-12" id ="info-containt">
             	
             </div>
@@ -131,7 +131,8 @@
         $("#about").css({color:"#ABACA5"});
     });
     $("#about").click(function(){
-        $('.full').css("background", "url(res/introPic.png)");  
+        $('.full').css("background", "url(res/introPic.png)"); 
+        $('#info-container').css("visibility","visible"); 
     });
 
 
@@ -144,7 +145,8 @@
         $("#project").css({color:"#ABACA5"});
     });
     $("#project").click(function(){
-        $('.full').css("background", "url(res/introPic.png)");  
+        $('.full').css("background", "url(res/introPic.png)");
+        $('#info-container').css("visibility","visible");  
     });
 
     $("#contact").mouseover(function(){
@@ -156,13 +158,9 @@
         $("#contact").css({color:"#ABACA5"});
     });
     $("#contact").click(function(){
-        $('.full').css("background", "url(res/introPic.png)");  
+        $('.full').css("background", "url(res/introPic.png)");
+        $('#info-container').css("visibility","visible");
     });
-
-    // $("#test").click(function(){
-        
-    //     $('.full').css("background", "url(res/introPic.png)");  
-    // });
 
     </script>
 </body>
