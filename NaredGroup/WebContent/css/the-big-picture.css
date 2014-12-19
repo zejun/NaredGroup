@@ -25,3 +25,19 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.full-contact {
+  background: url(../res/contactPic.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.full-project {
+  background: url(../res/projectPic.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
