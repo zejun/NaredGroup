@@ -47,6 +47,10 @@
 	width: 1000px;
 }
 
+.custom-text-pic-color{
+	color: black;
+}
+
 .custom-text-color{
 	color: rgb(230,230,230);
 }
@@ -152,4 +156,11 @@
 	overflow-x:hidden;
 	overFlow-y: scroll; 
 	
+}
+
+.project-pic {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	
+	display: flex;
+	align-items: center;
 }
