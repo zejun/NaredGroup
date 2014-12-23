@@ -95,7 +95,7 @@
 	<!-- Page Content -->
     <div class="container cus-container cus-scrool" id = "contant">
         <div class="row">
-            <div class="col-lg-12 text-left cus-text-contant cus-text-container">
+            <div class="col-lg-12 text-left cus-text-contant cus-text-container" id = "yesscrool" >
 
                 <h1 class="custom-font-bold custom-text-color">Vision & Mission</h1>
 
@@ -173,11 +173,12 @@
 
 
     $(document).ready(function(){
-        //$("#contant").css("height", ($(window).height() - $("#nav").height));
+        $("#contant").css("height", ($(window).height() - $("#nav").height()));
         
         //$("#info-container").height($(document).height());
         
     });
+
 
     $("#about").mouseover(function(){
         $("#about-svg").css({fill:"#fff"});

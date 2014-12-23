@@ -114,7 +114,8 @@
 }
 
 .cus-body{
-	overflow-y:hidden;
+	/**
+	overflow-y:hidden;**/
 }
 
 .cus-container {
@@ -136,9 +137,10 @@
 }
 
 .cus-scrool {
-	  
+	/**  
 	overflow: auto;
-	/*
-	overFlow-y: scroll; 
 	*/
+	
+	overFlow-y: scroll; 
+	
 }
