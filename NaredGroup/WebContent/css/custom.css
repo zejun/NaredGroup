@@ -12,7 +12,9 @@
 .navbar-brand,
 .navbar-nav li a {
     line-height: 60px;
-    height: 60px;
+    /**
+    height: 60px;*/
+    height: 15%;
     padding-top: 0;
 }
 
@@ -114,8 +116,8 @@
 }
 
 .cus-body{
-	/**
-	overflow-y:hidden;**/
+	
+	overflow-y:hidden;
 }
 
 .cus-container {
@@ -140,7 +142,7 @@
 	/**  
 	overflow: auto;
 	*/
-	
+	overflow-x:hidden;
 	overFlow-y: scroll; 
 	
 }
