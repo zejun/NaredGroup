@@ -85,9 +85,10 @@
 
 
 .navbar-nav-cus > li > div >div >a{
+	
+	color: #ABACA5;
 	/**
-	color: #ABACA5;**/
-	color: black;
+	color: black;**/
 	font-family: cus-font;
 }
 
@@ -119,6 +120,7 @@
 .cus-container {
 	position: relative;
 	top: 14px;
+	width: 60%;
 	/**
 	background-color: rgba(0, 0, 0, 0.5);
 	**/
