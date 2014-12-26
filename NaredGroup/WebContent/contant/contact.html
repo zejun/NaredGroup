@@ -28,7 +28,7 @@
 	
 
 </head>
-<body>
+<body class = "cus-body">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-cus-background" role="navigation">
         <div class="container custom-nav-width">
@@ -93,18 +93,17 @@
 
 
 	<!-- Page Content -->
-    <div class="container cus-container" style = "visibility: hidden;">
-        <!--
-        <div class="logo-position">
-            <img src="res/logo.png" alt="" class="img-responsive center-block custom-logo-size" />
-        </div>
-    -->
-        <div class="row  cus-containt"  id ="info-container">
-            <div class="col-md-12 col-sm-12" id ="info-containt">
-            	
+    <div class="container cus-container cus-body" id = "contant">
+        <div class="row">
+            <div class="col-lg-12 text-left cus-text-contant cus-text-container" id = "yesscrool" >
+                <p><br><br></p>
+                <h1 class="custom-font-bold custom-text-color">North American Real Estate Development Group</h1>
+                <h2 class="custom-font-bold custom-text-color">www.naredgroup.com</h2>
+                <h2 class="custom-font-bold custom-text-color">info@naredgroup.com</h2>
+                
+
             </div>
         </div>
-        <!-- /.row -->
     </div>
 
 	<!-- jQuery Version 1.11.0 -->
@@ -117,7 +116,7 @@
     <script type="text/javascript">
 
     $(document).ready(function(){
-
+        $("#contant").css("height", ($(window).height() - $("#nav").height()));
         //$("#info-container").height($(document).height());
         
     });
