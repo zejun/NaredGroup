@@ -44,7 +44,6 @@
 .custom-text-pic{
 	margin-top: 10px;
 	max-width: 1000px;
-	width: 1000px;
 }
 
 .custom-text-pic-color{
@@ -147,6 +146,7 @@
 .cus-text-contant{
 	top: 20px;
 	left: 30px;
+	width: 96%;
 }
 
 .cus-scrool {
