@@ -4,6 +4,15 @@
 	background-image: url(../res/nav-back.png);
 }
 
+.logo{
+    height: 50px;
+    width: 130px;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+	margin-top: 5px;
+}
+
 .navbar-cus-gradient{
 	background: -webkit-gradient(linear, 80% 0, 0 0, from(rgb(26, 26, 26)), to(transparent));
 	border-color: transparent;
@@ -133,7 +142,7 @@
 .cus-container {
 	position: relative;
 	top: 14px;
-	width: 60%;
+	width: 50%;
 	/**
 	background-color: rgba(0, 0, 0, 0.5);
 	**/
