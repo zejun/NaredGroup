@@ -32,7 +32,7 @@
 }
 
 .custom-font-size{
-	font-size: 25px;
+	font-size: 23px;
 }
 
 .custom-text{
@@ -153,7 +153,7 @@
 	/**  
 	overflow: auto;
 	*/
-	overflow-x:hidden;
+	overflow-x: hidden;
 	overFlow-y: scroll; 
 	
 }
@@ -163,4 +163,8 @@
 	
 	display: flex;
 	align-items: center;
+}
+
+.nav-proj{
+	margin-left: 0px;
 }
