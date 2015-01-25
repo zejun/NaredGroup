@@ -85,6 +85,7 @@
 
 .custom-nav-position{
 	width: 50%;
+	min-width: 800px;
 }
 
 .custom-logo-size{
@@ -152,6 +153,15 @@
   	background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4)); /*Standard*/ 
 }
 
+.cus-proj-container {
+	position: relative;
+	top: 14px;
+	width: 50%;
+	/**
+	background-color: rgba(0, 0, 0, 0.5);
+	**/
+}
+
 .cus-text-contant{
 	top: 20px;
 	left: 30px;
@@ -169,11 +179,17 @@
 
 .project-pic {
 	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-	
+	padding-left: 5px;
+	padding-right: 5px;
 	display: flex;
 	align-items: center;
 }
 
 .nav-proj{
 	margin-left: 0px;
+}
+
+.cus-small-pic{
+	padding-right: 5px;
+	padding-left: 5px;
 }
