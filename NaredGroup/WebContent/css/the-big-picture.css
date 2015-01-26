@@ -35,7 +35,7 @@ body {
 }
 
 .full-project {
-  background: url(../res/projectPic.png) no-repeat center center fixed; 
+  background: url(../res/project.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
