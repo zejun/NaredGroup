@@ -176,8 +176,8 @@
 	/**  
 	overflow: auto;
 	*/
-	overflow-x: hidden;
-	overFlow-y: scroll; 
+	/*overflow-x: hidden;
+	overFlow-y: scroll;*/ 
 	
 }
 
