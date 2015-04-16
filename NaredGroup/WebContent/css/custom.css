@@ -9,7 +9,8 @@
     width: 130px;
     float: left;
     text-align: center;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
 	margin-top: 5px;
 }
 
@@ -107,12 +108,15 @@
 
 
 .navbar-nav-cus > li > div >div >a{
-	
 	color: #ABACA5;
 	/**
 	color: black;**/
 	font-family: cus-font;
 }
+
+/*.navbar-nav-cus > li > div >div >a:hover{
+	color: #fff;
+}*/
 
 .navbar-nav-cus > li > div >div >a:hover,
 .navbar-nav-cus > li > div >div >a:focus {
