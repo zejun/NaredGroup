@@ -99,16 +99,15 @@
 
 	<!-- Page Content -->
     <div class="container cus-container cus-body" id = "contant">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12 text-left cus-text-contant cus-text-container" id = "yesscrool" >
-                <p><br><br></p>
-                <h1 class="custom-font-bold custom-text-pic-color">North American Real Estate Development Group</h1>
-                <h2 class="custom-font-bold custom-text-pic-color">www.naredgroup.com</h2>
                 <h2 class="custom-font-bold custom-text-pic-color">info@naredgroup.com</h2>
-                
-
             </div>
+        </div> -->
+        <div>
+            
         </div>
+
     </div>
 
 	<!-- jQuery Version 1.11.0 -->
@@ -161,9 +160,28 @@
         $("#contact-svg").css({fill:"#ABACA5"});
         $("#contact").css({color:"#ABACA5"});
     });
-    $("#contact").click(function(){
-        //$('.full').css("background", "url(res/introPic.png)");
-        //$('#info-container').css("visibility","visible");
+
+
+    $('#yourButtonId').click(function() {
+        $.ajax({
+            type: "post",
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                'from_email': 'VA2PE0_rRPnIFbUYLt7rHg',
+                'to': [
+                    {
+                        'email':'info@naredgroup.com',
+                        'name':'Message from website',
+                        'type':'to'
+                    }
+                ],
+                'autotext': 'true',
+                'subject': '',
+                'html': 'Email contact'
+            }
+        }).done(function(response){
+            console.log(response);
+        });
     });
 
     </script>
