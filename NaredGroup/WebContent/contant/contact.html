@@ -105,36 +105,30 @@
             </div>
         </div> -->
         <div class = "row">
-            <div class = "col-md-10 col-md-offset-1 col-lg-10 col-lg-1">
-
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="exampleInputName2">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Your Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail2">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                      </div>
-                      <textarea class="form-control" rows="3"></textarea>
-                      <button type="submit" class="btn btn-default">Send invitation</button>
-                    </form>
-                
+            <div class = "col-md-10 col-md-offset-1">
+                <!-- <form class="form-horizontal"> -->
+                  <div class="form-group">
+                    <label for="exampleInputName2">Name</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Email</label>
+                    <input type="email" class="form-control" id="Email2" placeholder="jane.doe@example.com">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" id="email_text"></textarea>
+                  </div>
+                  <button class="btn btn-default" id="email-send-btn">Send invitation</button>
+                <!-- </form> -->
             </div>
         </div>
-        <div class="bs-example" style="overflow: hidden;" data-example-id="blockquote-reverse">
-            <blockquote class="blockquote-reverse">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-        </div>
+        
     
 
     </div>
 
 	<!-- jQuery Version 1.11.0 -->
-    <script src="../js/jquery-1.11.0.js"></script>
-
+    <script src="../js/jquery-1.11.0.js"></script> 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/custom.js"></script>
@@ -183,26 +177,29 @@
         $("#contact").css({color:"#ABACA5"});
     });
 
-
-    $('#yourButtonId').click(function() {
+    $('#email-send-btn').click(function(){
+        alert("In function");
         $.ajax({
-            type: "post",
-            url: "https://mandrillapp.com/api/1.0/messages/send.json",
-            data: {
-                'from_email': 'VA2PE0_rRPnIFbUYLt7rHg',
+          type: "POST",
+          url: "https://mandrillapp.com/api/1.0/messages/send.json",
+          data: {
+            'key': 'eTX6eF9EZMuZsc_5zjiX5Q',
+            'message':{
+                'from_email': 'eric900130@gmail.com',
                 'to': [
                     {
-                        'email':'info@naredgroup.com',
+                        'email':'eric900130@gmail.com',
                         'name':'Message from website',
                         'type':'to'
                     }
-                ],
-                'autotext': 'true',
-                'subject': '',
-                'html': 'Email contact'
-            }
+                ]
+            },
+            'autotext': 'true',
+            'subject': 'Test message',
+            'html': 'document.getElementById("email_text").value'
+          },
         }).done(function(response){
-            console.log(response);
+            console.log(response.status);
         });
     });
 
