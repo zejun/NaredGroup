@@ -178,28 +178,34 @@
     });
 
     $('#email-send-btn').click(function(){
-        alert("In function");
+        console.log("name is " + document.getElementById("InputName").value);
+        console.log("email is " + document.getElementById("Email2").value);
+        console.log("email content " + document.getElementById("email_text").value);
+
+        var inputName = document.getElementById("InputName").value;
+        var email2 = document.getElementById("Email2").value;
+        var email_content = document.getElementById("email_text").value;
         $.ajax({
           type: "POST",
           url: "https://mandrillapp.com/api/1.0/messages/send.json",
           data: {
             'key': 'eTX6eF9EZMuZsc_5zjiX5Q',
+            "subject": 'Request Info',
             'message':{
-                'from_email': 'eric900130@gmail.com',
+                'from_email': email2,
                 'to': [
                     {
                         'email':'eric900130@gmail.com',
-                        'name':'Message from website',
+                        'name': inputName,
                         'type':'to'
                     }
                 ]
             },
             'autotext': 'true',
-            'subject': 'Test message',
-            'html': 'document.getElementById("email_text").value'
+            'text': email_content
           },
         }).done(function(response){
-            console.log(response.status);
+            console.log(response);
         });
     });
 
