@@ -190,8 +190,8 @@
           url: "https://mandrillapp.com/api/1.0/messages/send.json",
           data: {
             'key': 'eTX6eF9EZMuZsc_5zjiX5Q',
-            "subject": 'Request Info',
             'message':{
+                'subject': 'Request Info',
                 'from_email': email2,
                 'to': [
                     {
@@ -199,10 +199,10 @@
                         'name': inputName,
                         'type':'to'
                     }
-                ]
-            },
-            'autotext': 'true',
-            'text': email_content
+                ],
+                'autotext': 'true',
+                'text': email_content
+            }
           },
         }).done(function(response){
             console.log(response);
